@@ -374,117 +374,6 @@
   text-decoration: underline;
 }
 
-/* Responsive - Tablets y celulares */
-@media (max-width: 768px) {
-  .hero {
-    height: 300px;
-    padding: 60px 20px;
-    text-align: center;
-  }
-
-  .titulo, .subtitulo {
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  .menu {
-    align-items: center;
-    top: 15px;
-  }
-
-  .menu ul {
-    gap: 10px;
-      padding: 8px 16px;
-      font-size: 0.9rem;
-  }
-
-  .center-image img {
-    width: 80%;
-    height: auto;
-    object-fit: contain;
-    margin-top: 100px; /* separa más del menú */
-    margin-bottom: 20px;
-  }
-
-  .presentacion h2,
-  .importancia-web h2,
-  .metodologia h2,
-  .condiciones h2 {
-    font-size: 2rem;
-  }
-
-  .presentacion p,
-  .importancia-web .intro {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
-
-  .habilidades,
-  .herramientas {
-    gap: 8px;
-  }
-
-  .bloque-info {
-    padding: 20px;
-  }
-
-  .footer-contenido {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-}
-
-/* Responsive - Celulares pequeños */
-@media (max-width: 480px) {
-  .titulo {
-    font-size: 1.2rem;
-  }
-
-  .subtitulo {
-    font-size: 0.5rem;
-  }
-
-  .presentacion h2,
-  .importancia-web h2,
-  .metodologia h2,
-  .condiciones h2 {
-    font-size: 1.6rem;
-  }
-
-  .pasos,
-  .beneficios,
-  .tipos-paginas,
-  .contenedor-info {
-    grid-template-columns: 1fr;
-  }
-
-  .menu li a {
-    padding: 6px 12px;
-    font-size: 0.7rem;
-  }
-
-  .bloque-info h3 {
-    font-size: 1.3rem;
-  }
-
-  .subtitulo-metodologia {
-    font-size: 1.2rem;
-  }
-
-  .footer {
-    font-size: 0.9rem;
-  }
-
-  .center-image img {
-    width: 70%;
-    height: auto;
-    object-fit: contain;
-    margin-top: 120px; /* aún más espacio si el menú ocupa más altura */
-    margin-bottom: 20px;
-  }
-}
-
-
 /*PORTFOLIO*/
 .portfolio {
   background-color: #121212; /* Fondo oscuro */
@@ -646,68 +535,7 @@
   color: #ffc0cb;
 }
 
-/* ======== RESPONSIVE ======== */
-@media screen and (max-width: 768px) {
-  .portfolio {
-    padding: 40px 15px;
-  }
 
-  .portfolio h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-
-  .filtros {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .filtro {
-    padding: 8px 20px;
-    font-size: 0.9rem;
-  }
-
-  .overlay h3 {
-    font-size: 1.4rem;
-  }
-
-  .overlay p {
-    font-size: 0.9rem;
-  }
-
-  .overlay a {
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .portfolio h2 {
-    font-size: 1.8rem;
-  }
-
-  .filtros {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .filtro {
-    width: 100%;
-    text-align: center;
-  }
-
-  .overlay h3 {
-    font-size: 1.2rem;
-  }
-
-  .overlay p {
-    font-size: 0.85rem;
-  }
-
-  .overlay a {
-    font-size: 0.95rem;
-  }
-}
 
 /* Estilo galería */
 .galeria {
@@ -741,7 +569,106 @@
   color: #fddde6;
   font-size: 0.9rem;
 }
+
+/* =================== Responsive - Tablets (max-width: 768px) =================== */
 @media screen and (max-width: 768px) {
+  /* HERO */
+  .hero {
+    height: 300px;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .titulo,
+  .subtitulo {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* MENÚ */
+  .menu {
+    align-items: center;
+    top: 15px;
+  }
+
+  .menu ul {
+    gap: 10px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .menu li a {
+    font-size: 0.9rem;
+  }
+
+  /* IMAGEN CENTRAL */
+  .center-image img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  /* SECCIONES COMUNES */
+  .presentacion h2,
+  .importancia-web h2,
+  .metodologia h2,
+  .condiciones h2,
+  .portfolio h2 {
+    font-size: 2rem;
+  }
+
+  .presentacion p,
+  .importancia-web .intro {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .habilidades,
+  .herramientas {
+    gap: 8px;
+  }
+
+  .bloque-info {
+    padding: 20px;
+  }
+
+  /* FOOTER */
+  .footer-contenido {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* PORTFOLIO */
+  .portfolio {
+    padding: 40px 15px;
+  }
+
+  .filtros {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .filtro {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .overlay h3 {
+    font-size: 1.4rem;
+  }
+
+  .overlay p {
+    font-size: 0.9rem;
+  }
+
+  .overlay a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  /* GALERÍA */
   .galeria {
     padding: 30px 15px;
   }
@@ -761,7 +688,88 @@
   }
 }
 
+/* =================== Responsive - Celulares (max-width: 480px) =================== */
 @media screen and (max-width: 480px) {
+  /* TÍTULOS */
+  .titulo {
+    font-size: 1.2rem;
+  }
+
+  .subtitulo {
+    font-size: 0.5rem;
+  }
+
+  /* ENCABEZADOS DE SECCIONES */
+  .presentacion h2,
+  .importancia-web h2,
+  .metodologia h2,
+  .condiciones h2,
+  .portfolio h2 {
+    font-size: 1.6rem;
+  }
+
+  .subtitulo-metodologia {
+    font-size: 1.2rem;
+  }
+
+  .bloque-info h3 {
+    font-size: 1.3rem;
+  }
+
+  /* TEXTO GENERAL */
+  .footer {
+    font-size: 0.9rem;
+  }
+
+  /* CENTRO IMAGEN */
+  .center-image img {
+    width: 70%;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+
+  /* LAYOUT EN COLUMNAS */
+  .pasos,
+  .beneficios,
+  .tipos-paginas,
+  .contenedor-info {
+    grid-template-columns: 1fr;
+  }
+
+  /* MENÚ */
+  .menu li a {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+
+  /* PORTFOLIO */
+  .portfolio {
+    padding: 30px 10px;
+  }
+
+  .filtros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filtro {
+    width: 100%;
+    text-align: center;
+  }
+
+  .overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .overlay p {
+    font-size: 0.85rem;
+  }
+
+  .overlay a {
+    font-size: 0.95rem;
+  }
+
+  /* GALERÍA */
   .galeria {
     padding: 20px 10px;
   }

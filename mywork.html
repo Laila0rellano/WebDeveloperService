@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Trabajos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+      <section class="portfolio" id="portfolio">
+        <div class="contenedor-portfolio">
+          <nav>
+            <a href="index.html">Volver al Inicio</a>
+          </nav>
+          <h2>Mis Proyectos</h2>
+          <div class="filtros">
+            <button class="filtro" data-filter="todo">Todo</button>
+            <button class="filtro" data-filter="design">Diseños</button>
+            <button class="filtro" data-filter="frontend">Frontend</button>
+            <button class="filtro" data-filter="full">Full Pages</button>
+          </div>
+          
+          <div class="proyectos">
+            <div class="proyecto full">
+              <img src="imagenes/2.jpg" alt="Proyecto 1">
+              <div class="overlay">
+                <h3>Edifica Inmobiliaria</h3>
+                <p>Página BETA Real Estate (Inmobiliaria), próxima a lanzamiento.</p>
+                <a href="https://edificainmobiliaria.com">Ver más</a>
+              </div>
+            </div>
+            <div class="proyecto frontend">
+              <img src="imagenes/1.jpg" alt="Proyecto 2">
+              <div class="overlay">
+                <h3>Rizuy Store</h3>
+                <p>Maqueta de página simpla para ventas,carruseles de imágenes, precios y contacto.</p>
+                <a href="https://laila0rellano.github.io/RizuyStore/">Ver más</a>
+              </div>
+            </div>
+            <div class="proyecto full">
+              <img src="imagenes/15.png" alt="Proyecto 3">
+              <div class="overlay">
+                <h3>Invitaciones Interactivas</h3>
+                <p>Diseño para cumpleaños, casamientos, entre otros eventos.</p>
+                <a href="invitaciones.html">Ver más</a>
+              </div>
+            </div>
+            <div class="proyecto frontend">
+              <img src="imagenes/4.jpeg" alt="Proyecto 3">
+              <div class="overlay">
+                <h3>Magazine</h3>
+                <p>Maqueta de página para revistas, con anuncios, secciones, encabezados, etc</p>
+                <a href="https://laila0rellano.github.io/Magazine/">Ver más</a>
+              </div>
+            </div>
+            <div class="proyecto design">
+              <img src="imagenes/dbd.png" alt="Proyecto 3">
+              <div class="overlay">
+                <h3>Diseño Campus Virtual</h3>
+                <p>Diseño para campus virtual universitario.</p>
+              </div>
+            </div>
+            <div class="proyecto design">
+              <img src="imagenes/66.jpg" alt="Proyecto 3">
+              <div class="overlay">
+                <h3>Landing Page Para Fotógrafo</h3>
+                <p>Diseño de landing page con formulario de contacto y acceso al portfolio.</p>
+              </div>
+            </div>
+            <div class="proyecto frontend">
+              <img src="imagenes/3.jpeg" alt="Proyecto 3">
+              <div class="overlay">
+                <h3>FanPage</h3>
+                <p>Maqueta de FanPage estilo Portfolio con secciones, datos, imágenes y posters.</p>
+                <a href="https://laila0rellano.github.io/LanasWebPage/">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </section>
+      <script>// Filtrado de proyectos
+        const filtros = document.querySelectorAll('.filtro');
+        const proyectos = document.querySelectorAll('.proyecto');
+        
+        filtros.forEach(filtro => {
+          filtro.addEventListener('click', () => {
+            const categoria = filtro.dataset.filter;
+        
+            proyectos.forEach(proyecto => {
+              if (categoria === 'todo' || proyecto.classList.contains(categoria)) {
+                proyecto.style.display = 'block';
+              } else {
+                proyecto.style.display = 'none';
+              }
+            });
+          });
+        });
+        </script>
+</body>
+</html>
